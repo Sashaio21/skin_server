@@ -5,6 +5,7 @@ from flask_cors import CORS
 import numpy as np
 from PIL import Image
 import io
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"  # Оставляет только ошибки
 
 # Загрузка модели
 MODEL_PATH = './assets/model/skin_disease_model_final.keras'
